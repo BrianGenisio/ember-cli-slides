@@ -1,4 +1,4 @@
-# Generated on 2015-06-05 using generator-reveal 0.4.0
+# Generated on 2015-01-01 using generator-reveal 0.4.0
 module.exports = (grunt) ->
 
     grunt.initConfig
@@ -7,7 +7,7 @@ module.exports = (grunt) ->
 
             livereload:
                 options:
-                    livereload: 35728
+                    livereload: true
                 files: [
                     'index.html'
                     'slides/{,*/}*.{md,html}'
@@ -40,7 +40,7 @@ module.exports = (grunt) ->
                     hostname: 'localhost'
                     base: '.'
                     open: true
-                    livereload: 35728
+                    livereload: true
 
         coffeelint:
 
@@ -68,6 +68,7 @@ module.exports = (grunt) ->
                         'slides/**'
                         'bower_components/**'
                         'js/**'
+                        'assets/**'
                     ]
                     dest: 'dist/'
                 },{
@@ -77,6 +78,18 @@ module.exports = (grunt) ->
                     filter: 'isFile'
                 }]
 
+        
+        buildcontrol:
+
+            options:
+                dir: 'dist'
+                commit: true
+                push: true
+                message: 'Built from %sourceCommit% on branch %sourceBranch%'
+            pages:
+                options:
+                    remote: 'git@github.com:BrianGenisio/ember-cli-slides.git'
+                    branch: 'gh-pages'
         
 
 
@@ -119,6 +132,12 @@ module.exports = (grunt) ->
             'copy'
         ]
 
+    
+    grunt.registerTask 'deploy',
+        'Deploy to Github Pages', [
+            'dist'
+            'buildcontrol'
+        ]
     
 
     # Define default task.
