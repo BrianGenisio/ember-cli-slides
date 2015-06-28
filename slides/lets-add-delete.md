@@ -2,7 +2,7 @@
 
 ### Hook the template
 ```html
-<button {{action "remove"}} class="btn btn-xs btn-default">X</button>
+<button {{action "remove" beer}} class="btn btn-xs btn-default">X</button>
 ```
 
 ### Create the index controller

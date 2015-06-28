@@ -3,6 +3,10 @@
 - application
     + beer
         * index
-        * new
         * show
+            - rating
+                + index
+                + new
+        * new
+        * edit
 

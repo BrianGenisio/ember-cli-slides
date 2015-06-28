@@ -1,3 +1,6 @@
 ##  If we have time
 
-Show Narya
+### Narya
+- Visual Studio integration via Grunt
+- OAuth Sessions
+- Components

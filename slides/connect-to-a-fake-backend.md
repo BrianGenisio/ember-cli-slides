@@ -2,7 +2,6 @@
 
 ```javascript
 ember generate http-mock beers
-ember generate adapter application
 ```
 
 ### And edit your backend
@@ -28,10 +27,3 @@ model: function() {
 }
 ```
 
-### And set the adapter's namespace
-
-```javascript
-export default DS.RESTAdapter.extend({
-  namespace: 'api'
-});
-```
