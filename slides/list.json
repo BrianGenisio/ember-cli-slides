@@ -1,9 +1,12 @@
 [
     "index.md",
+    "i-dont-have-time.md",
+    "ill-do-it-tomorrow.md",
+    "task-runners.md",
+    "generators.md",
+    "specific-generator.md",
     "why-ember.md",
     "why-ember-cli.md",
-    "why-embercli-for-us.md",
-    "where-are-we-using-ember.md",
     "see-it-in-action-ratebeer.md",
     "create-a-resource.md",
     "run-the-server.md",
@@ -23,6 +26,5 @@
     "what-is-this-environment.md",
     "how-do-you-debug.md",
     "unit-tests.md",
-    "lets-talk-about-components.md",
-    "if-we-have-town.md"
+    "lets-talk-about-components.md"
 ]
