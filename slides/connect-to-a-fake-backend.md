@@ -23,7 +23,7 @@ ember generate http-mock beers
 
 ```javascript
 model: function() {
-    return this.store.find('beer');
+    return this.store.findAll('beer');
 }
 ```
 
