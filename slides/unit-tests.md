@@ -2,4 +2,21 @@
 
 ### localhost:4200/tests
 
-#### Show an example of a test
+```js
+test('it destroys object when canceled', function(assert) {
+  let destroyed = false;
+  let controller = this.subject();
+
+  controller.model = {
+    destroyRecord: function() {
+      destroyed = true;
+    }
+  };
+
+  controller.transitionToRoute = () => {};
+
+  controller.send('cancel');
+
+  assert.ok(destroyed);
+});
+```
