@@ -28,5 +28,9 @@
     "unit-tests.md",
     "use-sinon-instead.md",
     "lets-talk-about-components.md",
+    "component-logic.md",
+    "component-template.md",
+    "component-use.md",
     "take-life-easy.md"
+    
 ]
