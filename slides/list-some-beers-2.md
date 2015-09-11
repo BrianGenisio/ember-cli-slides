@@ -3,7 +3,7 @@
 ### Update the template
 ```html
 <ul>
-    {{#each beer in model}}
+    {{#each model as |beer|}}
         <li>
             {{beer.name}}
             {{beer.brewery}}

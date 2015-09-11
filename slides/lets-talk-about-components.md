@@ -1,3 +1,5 @@
 ##  Let's Talk about Components
 
-Create a component demo
+```
+ember generate component beer-rating
+```
