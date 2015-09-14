@@ -12,15 +12,3 @@ updateRating: function(beer, rating) {
   beer.save();
 },
 ```
-
-Beer Model
-```js
-rating: DS.attr('number')
-```
-
-CSS
-```css
-.rating {
-    cursor: pointer;
-}
-```
