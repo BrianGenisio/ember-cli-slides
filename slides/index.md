@@ -1,5 +1,11 @@
 
 # Ember CLI
 
-![Tomster](http://media.mediatemple.netdna-cdn.com/wp-content/uploads/2013/11/emberjs-logo.png)
+![Tomster](assets/emberjs-logo.png)
+
+[@BrianGenisio](http://twitter.com/BrianGenisio)
+
+[@SEM_js](http://twitter.com/sem_js)
+
+[@CareEvolution](http://twitter.com/CareEvolution)
 
